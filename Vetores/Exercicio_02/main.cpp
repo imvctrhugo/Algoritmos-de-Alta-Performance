@@ -17,7 +17,7 @@ int main()
 
     }
 
-    cout << "\n" << "Pessoas individadas: " << n;
+    cout << "\n" << "Pessoas endividadas: " << n;
 
     return 0;
 }
