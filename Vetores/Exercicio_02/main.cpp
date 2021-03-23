@@ -9,7 +9,7 @@ int main()
 
     for(int i = 0; i < 10; i++)
     {
-        if(saldos[i] < 0)
+        if(saldos[i] >= 0)
         {
             cout << saldos[i] << "\t";
             n++;
