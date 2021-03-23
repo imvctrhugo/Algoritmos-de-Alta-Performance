@@ -8,7 +8,7 @@ int main()
 
     for(int i = 0; i<10; i++)
     {
-        cout << "Digite o indice " << i << endl;
+        cout << "Por favor, digite o indice " << i << endl;
         cin >> vetor[i];
 
     }
