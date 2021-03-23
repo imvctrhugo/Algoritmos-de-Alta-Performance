@@ -11,13 +11,13 @@ int main()
     {
         if(saldos[i] >= 0)
         {
-            cout << saldos[i] << "\t";
+            cout << "R$" << saldos[i] << endl;
             n++;
         }
 
     }
 
-    cout << "\n" << "Pessoas endividadas: " << n;
+    cout << "\n" << "Pessoas endividadas: " << n << endl;
 
     return 0;
 }
