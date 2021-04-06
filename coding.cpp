@@ -40,8 +40,11 @@ int main()
 
         }
 
+
+
     }
 
     cout << "Aluno com maior nota: " <<  nome[indiceMaior] << " | Nota: " << nota[indiceMaior];
+
 
 }
