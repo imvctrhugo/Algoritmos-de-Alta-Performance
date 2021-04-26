@@ -45,7 +45,7 @@ int main()
 
             for(int a = 0; a < alunosMaximo; a++)
             {
-                if(strcmp(pesquisa, nome[a]) == 0)
+                if(strcmpi(pesquisa, nome[a]) == 0)
                     presente = 1;
 
             }
