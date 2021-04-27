@@ -7,11 +7,8 @@ using namespace std;
 #define NC 30
 
 struct dados_cliente{
-    char nome[NC];
-    char endereco[NC];
-    char cpf[NC];
-    int id_conta;
-    int ano_abertura;
+    char nome[NC], endereco[NC], cpf[NC];
+    int id_conta, ano_abertura;
     float saldo;
 };
 

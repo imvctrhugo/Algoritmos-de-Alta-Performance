@@ -66,7 +66,7 @@ int main() { //Funcao main
         if(clientes[i].ano_abertura <= 2021-10)
             antigos++;
 
-        cout << "Digite o SALDO: ";
+        cout << "Digite o SALDO: R$";
         cin >> clientes[i].saldo;
         cin.ignore();
         if(clientes[i].saldo < 0)
