@@ -1,37 +1,30 @@
 #include <iostream>
-#include <cstring>
-
+#include<locale>
 using namespace std;
 
-#define maximoAlunos 200
-#define caracteres 25
+//& (endereco de)
+//* (conteudo de)
 
-int presentes;
-char nome[maximoAlunos][caracteres];
+void exemplo(int n, int *dobro, float *metade)
+{
+    *dobro = n+n;
+    *metade = (float)n/2;    
 
-int main()
-{    
-    do
-    {
-        cout << "Digite quantos alunos estao presentes: ";
-        cin >> presentes;
+}
 
-        if(presentes < 0 || presentes > maximoAlunos)
-            cout << "Por favor digite um valor valido entre 0 e 200." << endl;
+int main() {    
+    setlocale(LC_ALL,"");
 
-    }while(presentes < 0 || presentes > maximoAlunos);
+    int x, d;
+    float m;
 
-    for(int i = 0; i < presentes; i++)
-    {
-        cout << "Digite o nome do aluno " << i << ": ";
-        cin.ignore();
-        cin.getline(nome[i], caracteres);
+    cout << "Digite um número inteiro: ";
+    cin >> x;
 
-    }
+    exemplo(x, &d, &m);
 
-    for(int i = 0; i < presentes; i++)
-        cout << nome[i] << endl;
-
-    
+    cout << "Número digitado (x): " << x << endl;
+    cout << "Dobro (d): " << d << endl;
+    cout << "Metade (m): " << m << endl;
 
 }
